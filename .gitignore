@@ -1,0 +1,14 @@
+**/.vertx/
+**/log/
+**/logs/
+**/target/
+**/file-uploads/
+**/.keystore
+**/keystore.jks
+*.iws
+**/.DS_Store
+**/.idea
+**/*.iml
+**/*.ipr
+**/*.iws
+builds/
