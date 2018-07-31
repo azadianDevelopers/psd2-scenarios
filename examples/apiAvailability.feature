@@ -1,3 +1,4 @@
+@Sandbox
 Feature: API Availability
 
 Scenario: Internet Connectivity
