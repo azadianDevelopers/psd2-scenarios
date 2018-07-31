@@ -1,6 +1,7 @@
 @Sandbox
 Feature: Website availability
 
+@UI
 Scenario Outline: Login to sandbox
 
   Given customer is redirected from <tpp>

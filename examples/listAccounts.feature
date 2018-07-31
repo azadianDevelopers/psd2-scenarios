@@ -1,6 +1,7 @@
-@Account
+@Account @AnotherLabel
 Feature: List All Accounts
 
+@Consent
 Scenario Outline: List All Consented Accounts
    Given customer is redirected from <tpp>,
    When user logs in with <username> and <password>,

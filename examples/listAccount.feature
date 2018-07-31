@@ -1,6 +1,7 @@
 @Account
 Feature: List Account details
 
+@Consent
 Scenario Outline: List basic account details
    Given customer is redirected from <tpp>,
    When user logs in with <username> and <password>,
