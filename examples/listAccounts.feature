@@ -1,5 +1,5 @@
 @Account
-Feature List All Accounts
+Feature: List All Accounts
 
 Scenario Outline:
    Given customer is redirected from <tpp>,
