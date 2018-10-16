@@ -7,7 +7,7 @@ Background:
       
 
 @Consent
-Scenario Outline: List All Consented Accounts
+Scenario Outline: M
    Given i make a payment of <amount> from <fromAccount> to account <toAccount>
    Then when the payment is submited its status is <success>   
 
