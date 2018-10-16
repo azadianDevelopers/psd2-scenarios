@@ -14,7 +14,7 @@ Scenario Outline: Make a suucessful payment
 Examples:
   |amount|currency|fromAccount|toAccount|
   |30|eur|5353-566999|34234-234234|
-  |2333|eur|234242-234234|234234-234234|
+  |12|eur|234242-234234|234234-234234|
 
 @Consent
 Scenario Outline: Make a payment that fails
