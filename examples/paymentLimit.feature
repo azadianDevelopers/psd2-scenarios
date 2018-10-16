@@ -7,12 +7,22 @@ Background:
       
 
 @Consent
-Scenario Outline: M
-   Given i make a payment of <amount> from <fromAccount> to account <toAccount>
-   Then when the payment is submited its status is <success>   
+Scenario Outline: Make a suucessful payment
+   Given i make a payment of <amount> in currency <currency>from <fromAccount> to account <toAccount>
+   Then when the payment is submited its succeeds 
 
 Examples:
-  |amount|fromAccount|toAccount|success|
-  |30|5353-566999|34234-234234|true|
-  |2333|234242-234234|234234-234234|false|
+  |amount|currency|fromAccount|toAccount|
+  |30|eur|5353-566999|34234-234234|
+  |2333|eur|234242-234234|234234-234234|
+
+@Consent
+Scenario Outline: Make a payment that fails
+   Given i make a payment of <amount> in currency <currency> from <fromAccount> to account <toAccount>
+   Then when the payment is submited its fails with error message <errorMessage>   
+
+Examples:
+  |amount|currency|fromAccount|toAccount|errorMessage|
+  |11111|eur|5353-566999|34234-234234|Amount way too much|
+  |2333|eur|234242-234234|234234-234234|Amount too much|
    
